@@ -1,4 +1,6 @@
 <h1>Currency pairs</h1>
 <ul>
-  <li>Convert </li>
+  <% @currency.each do |curr_count|%>
+   <li> <a href="/<%= curr_count %>">Convert 1 <%= curr_count %> to...</a></li>
+  <% end %>
 </ul>
